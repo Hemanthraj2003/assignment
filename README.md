@@ -2,15 +2,15 @@
 
 ## Login Page in action
 
-![Lgoin page](src/assets/DocImages/login.jpg "login page")
+![Login page](src/assets/DocImages/login.jpg "login page")
 
 ## Customers personal info
 
-![Customers page](src/assets/DocImages/personal.jpg.jpg "Personal")
+![Customers page](src/assets/DocImages/personal.jpg "Personal")
 
 ## Customers Address Info
 
-![Customers page](src/assets/DocImages/address.jpg.jpg "Address")
+![Customers page](src/assets/DocImages/address.jpg "Address")
 
 ## Customers Banking Info
 
