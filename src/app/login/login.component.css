@@ -1,0 +1,68 @@
+#base {
+    background-image: url('../../assets/angular.jpg');
+    background-position: -20px -120px;
+    height: 100vh;
+    box-sizing: border-box;
+    display: flex;
+}
+
+#credBox {
+    box-sizing: border-box;
+    margin: auto 100px;
+    padding: 20px;
+    padding-left: 90px;
+    padding-right: 90px;
+    height: 30rem;
+    width: 35rem;
+
+    border-radius: 20px;
+    background-color: #ce1a41;
+
+
+
+    border: 2px solid rgba(255, 255, 255, 0.123);
+
+}
+
+#flexBox{
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+
+mat-form-field input {
+    height: 50px;
+    box-sizing: border-box;
+    width: 100% !important;
+    color: rgb(252, 252, 252) !important;
+    padding-top: 15px;
+}
+
+mat-form-field {
+    width: 100%;
+    box-sizing: border-box;
+    height: 100%;
+    color: white !important;
+    margin: 0;
+    padding: 0;
+}
+
+#submitt {
+    background-color:white;
+    color: #ce1a41;
+    font-family: monospace;
+
+    font-weight: 900;
+    font-size:large;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+#submitt:hover {
+    background-color:rgba(255, 255, 255, 0.39);
+    color: #ffffff;
+
+}

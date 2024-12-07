@@ -1,0 +1,50 @@
+
+
+mat-form-field{
+    height: 83px;
+    width: 450px !important;
+
+    margin: 2px;
+}
+mat-form-field input{
+    height: 40px;
+    font-size: 20px;
+    line-height: 1.5;
+}
+
+#submit{
+    background-color: rgb(4, 252, 240);
+}
+
+#customerDiv {
+    margin:auto;
+    padding: 10px;
+    width: 80%;
+   
+}
+#customerRoot {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+}
+.personalDiv{
+    display: flex;
+    height: 336px;
+    /* border: 2px solid black; */
+    padding: 20px;
+    border-radius: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 30px;
+}
+.mb{
+    margin-bottom: 80px !important;
+}
+
+.block{
+    background-color: grey !important;
+    border-radius: 10px;
+    
+}

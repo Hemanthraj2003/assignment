@@ -1,0 +1,257 @@
+<div id="customerRoot">
+  <div id="customerDiv">
+    <form #myForm="ngForm">
+      <mat-stepper headerPosition="bottom" #stepper>
+        <mat-step>
+          <div
+            style="
+              font-size: 28px;
+              font-weight: 500;
+              text-align: center;
+              margin-bottom: 20px;
+            "
+          >
+            Personal Info
+          </div>
+          <div class="mb personalDiv">
+            <div>
+              <img
+                src="../../assets/personal.png"
+                height="300px"
+                width="300px"
+              />
+            </div>
+            <div>
+              <div>
+                <mat-form-field>
+                  <mat-label>Name</mat-label>
+                  <input
+                    type="text"
+                    name="name"
+                    matInput
+                    required
+                    [(ngModel)]="personal.name"
+                  />
+                </mat-form-field>
+              </div>
+              <div>
+                <mat-form-field>
+                  <mat-label>Contact Person</mat-label>
+                  <input
+                    type="text"
+                    name="contactPerson"
+                    [(ngModel)]="personal.contactPerson"
+                    matInput
+                    required
+                  />
+                </mat-form-field>
+              </div>
+              <div>
+                <mat-form-field>
+                  <mat-label>Gender</mat-label>
+                  <input
+                    type="text"
+                    name="gender"
+                    [(ngModel)]="personal.gender"
+                    matInput
+                    required
+                  />
+                </mat-form-field>
+              </div>
+              <div>
+                <mat-form-field>
+                  <mat-label>D.O.B</mat-label>
+                  <input
+                    type="text"
+                    name="DOB"
+                    [(ngModel)]="personal.DOB"
+                    matInput
+                    required
+                  />
+                </mat-form-field>
+              </div>
+              <div style="display: flex; justify-content: end">
+                <button mat-stroked-button matStepperNext>Next</button>
+              </div>
+            </div>
+          </div>
+          <ng-template matStepLabel>Personal Info</ng-template>
+        </mat-step>
+        <mat-step>
+          <div
+            style="
+              font-size: 28px;
+              font-weight: 500;
+              text-align: center;
+              margin-bottom: 20px;
+            "
+          >
+            Address Info
+          </div>
+          <div class="personalDiv mb">
+            <div>
+              <img
+                src="../../assets/address.png"
+                width="300px"
+                height="300px"
+              />
+            </div>
+            <div>
+              <div>
+                <mat-form-field>
+                  <mat-label>Address</mat-label>
+                  <input
+                    type="text"
+                    name="address1"
+                    [(ngModel)]="address.address01"
+                    matInput
+                    required
+                  />
+                </mat-form-field>
+              </div>
+              <div>
+                <mat-form-field>
+                  <mat-label>E-mail </mat-label>
+                  <input
+                    type="text"
+                    name="email"
+                    [(ngModel)]="address.email"
+                    matInput
+                    required
+                  />
+                </mat-form-field>
+              </div>
+              <div>
+                <mat-form-field>
+                  <mat-label>Post Code </mat-label>
+                  <input
+                    type="text"
+                    name="postCode"
+                    [(ngModel)]="address.postCode"
+                    matInput
+                    required
+                  />
+                </mat-form-field>
+              </div>
+              <div>
+                <mat-form-field>
+                  <mat-label>Fax no </mat-label>
+                  <input
+                    type="text"
+                    name="fax"
+                    [(ngModel)]="address.fax"
+                    matInput
+                    required
+                  />
+                </mat-form-field>
+              </div>
+              <div style="display: flex; justify-content: space-evenly">
+                <button mat-stroked-button matStepperPrevious>Back</button>
+                <button mat-stroked-button matStepperNext>Next</button>
+              </div>
+            </div>
+          </div>
+
+          <ng-template matStepLabel>Address Info</ng-template>
+        </mat-step>
+        <mat-step>
+          <div
+            style="
+              font-size: 28px;
+              font-weight: 500;
+              text-align: center;
+              margin-bottom: 20px;
+            "
+          >
+            Banking Info
+          </div>
+          <div class="personalDiv mb">
+            <div>
+              <img src="../../assets/bank.png" width="300px" height="300px" />
+            </div>
+            <div>
+              <div>
+                <mat-form-field>
+                  <mat-label>Bank name </mat-label>
+                  <input
+                    type="text"
+                    name="bankName"
+                    [(ngModel)]="bank.bankName"
+                    matInput
+                    required
+                  />
+                </mat-form-field>
+              </div>
+              <div>
+                <mat-form-field>
+                  <mat-label>Bank Account no</mat-label>
+                  <input
+                    type="text"
+                    name="accNo"
+                    [(ngModel)]="bank.bankAccNo"
+                    matInput
+                    required
+                  />
+                </mat-form-field>
+              </div>
+              <div>
+                <mat-form-field>
+                  <mat-label>Bank IFSC</mat-label>
+                  <input
+                    type="text"
+                    name="ifsc"
+                    [(ngModel)]="bank.bankIFSC"
+                    matInput
+                    required
+                  />
+                </mat-form-field>
+              </div>
+              <div>
+                <mat-form-field>
+                  <mat-label>GST no </mat-label>
+                  <input
+                    type="text"
+                    name="gstNo"
+                    [(ngModel)]="bank.gstNo"
+                    matInput
+                    required
+                  />
+                </mat-form-field>
+              </div>
+              <div style="display: flex; justify-content: space-evenly">
+                <button mat-stroked-button matStepperPrevious>Back</button>
+                <button
+                  mat-stroked-button
+                  type="submit"
+                  [disabled]="myForm.invalid"
+                  [className]="myForm.invalid && 'block'"
+                  (click)="onSubmit()"
+                >
+                  Submit
+                </button>
+              </div>
+            </div>
+          </div>
+          <ng-template matStepLabel>Banking Info</ng-template>
+        </mat-step>
+      </mat-stepper>
+
+      <!-- <div>
+      
+        
+        
+      </div>
+      <div>
+        <div>Banking Info:</div>
+        
+       
+        
+        
+       
+      </div> -->
+    </form>
+  </div>
+  <!-- <div>
+    <button mat-raised-button type="submit" id="submit">Submit</button>
+  </div> -->
+</div>

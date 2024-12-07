@@ -1,0 +1,40 @@
+<div id="base">
+  <div id="credBox">
+    <!-- <div>
+      <div>Login</div>
+      <div>SignUp</div>
+    </div> -->
+    <div id="flexBox">
+      <div style="text-align: center"><h1 style="color: white">LOGIN</h1></div>
+      <div
+        style="
+          display: flex;
+          flex-direction: column;
+          gap: 30px;
+          margin-top: 20px;
+        "
+      >
+        <mat-form-field>
+          <mat-label>UserName</mat-label>
+          <input
+            matInput
+            type="text"
+            required
+            name="username"
+            [(ngModel)]="Login.username"
+          />
+        </mat-form-field>
+        <mat-form-field>
+          <mat-label>Password</mat-label>
+          <input
+            matInput
+            type="password"
+            required
+            [(ngModel)]="Login.password"
+          />
+        </mat-form-field>
+      </div>
+    </div>
+    <button mat-raised-button id="submitt" (click)="onLogin()">LOGIN</button>
+  </div>
+</div>
