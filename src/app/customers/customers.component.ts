@@ -42,6 +42,5 @@ export class CustomersComponent {
     localStorage.setItem('customers', JSON.stringify(customers));
     alert('customers data updated successfully')
     this.router.navigate(['/customers']);
-    
   }
 }

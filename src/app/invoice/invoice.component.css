@@ -1,0 +1,44 @@
+#invoice {
+    width: 70vw;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+}
+
+#invoiceHeadingCard {
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#invoiceDiv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#invoiceButtonDiv {
+    display: flex;
+    width: 30%;
+    justify-content: space-around;
+}
+
+.formGroup{
+    display: flex;
+    /* justify-content: space-around; */
+    gap: 60px;
+}
+
+mat-form-field {
+    width: 280px !important;
+}
+
+#itemButtonsDiv{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#itemButtons{
+    width: 25%;
+    display: flex;
+    justify-content: space-around;
+}

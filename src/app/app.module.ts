@@ -12,13 +12,24 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatButtonModule} from '@angular/material/button';
+import {MatIconModule} from '@angular/material/icon';
 import {MatStepperModule} from '@angular/material/stepper';
+import { InvoiceComponent } from './invoice/invoice.component';
+import {MatExpansionModule} from '@angular/material/expansion';
+import {MatCardModule} from '@angular/material/card';
+import {MatDatepickerModule} from '@angular/material/datepicker';
+import { MatNativeDateModule } from '@angular/material/core';
+import {MatSelectModule} from '@angular/material/select';
+import {MatTableModule} from '@angular/material/table';
+import { TableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    CustomersComponent
+    CustomersComponent,
+    InvoiceComponent,
+    TableComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +41,13 @@ import {MatStepperModule} from '@angular/material/stepper';
     MatButtonModule,
     MatStepperModule,
     ReactiveFormsModule,
-    
+    MatExpansionModule,
+    MatCardModule,
+    MatDatepickerModule,
+    MatNativeDateModule,
+    MatSelectModule,
+    MatIconModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]

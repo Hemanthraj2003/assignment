@@ -1,5 +1,9 @@
 # Assignment
 
+## Invoice Page
+
+![Invoice](src/assets/DocImages/invoice.jpg "Invoice page")
+
 ## Login Page in action
 
 ![Login page](src/assets/DocImages/login.jpg "login page")
