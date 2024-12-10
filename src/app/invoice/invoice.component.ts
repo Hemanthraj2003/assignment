@@ -111,6 +111,16 @@ export class InvoiceComponent {
     }
   }
 
+  saveInvoice(){
+    let invoiceList = JSON.parse(localStorage.getItem('invoice') || '[]')
+    const invoice = [{'header' : this.invoiceHeader, 'Items':this.items} ]
+    invoiceList.push(invoice);
+    localStorage.setItem('invoice', JSON.stringify(invoiceList));
+    alert('Invoice saved');
+    this.invoiceReset();
+    this.items = []
+  }
+
   // this is the table schema
   columnsToDisplay:string[] = [ 'categorey', 'name', 'woNumber', 'city', 'quantity','rate','lineAmount','gstPercentage', 'totalAmount'  ]
 

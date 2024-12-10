@@ -4,6 +4,10 @@
 
 ![Invoice](src/assets/DocImages/invoice.jpg "Invoice page")
 
+## Invoice Local Storage
+
+![Invoice](src/assets/DocImages/invoicelocalstorage.jpg "Invoice local storage")
+
 ## Login Page in action
 
 ![Login page](src/assets/DocImages/login.jpg "login page")

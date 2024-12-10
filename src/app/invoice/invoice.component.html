@@ -8,9 +8,8 @@
           mat-fab
           extended
           color="primary"
-          [disabled]="
-            !(invoiceHeader.isHeaderValidated && invoiceItem.isItemValidated)
-          "
+          [disabled]="!(invoiceHeader.isHeaderValidated && items.length > 0)"
+          (click)="saveInvoice()"
         >
           Save Invoice<mat-icon>save</mat-icon>
         </button>
